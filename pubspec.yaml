@@ -1,0 +1,20 @@
+name: internee_portal
+description: A mobile course discovery companion for Internee.pk.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.15.2
+  firebase_auth: ^5.7.0
+  cloud_firestore: ^5.6.12
+  url_launcher: ^6.3.2
+  webview_flutter: ^4.10.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+flutter:
+  uses-material-design: true
