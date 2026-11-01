@@ -2,6 +2,23 @@
 
 Course discovery app based on the publicly visible Internee.pk learning catalog (snapshot: 27 September 2026). The catalog is bundled locally; it does **not** call an undocumented private API. Course cards open an embedded view of the official learning site. Firebase Authentication handles email/password sign up, sign in, password reset and sign out. Firestore stores each user's saved courses and independent practice quiz scores. Firebase accounts created here are **not** Internee.pk accounts; enrollment, official video access, quizzes, purchases and certificates happen through their own platform.
 
+## Features
+
+- Course discovery from a locally bundled snapshot of the public Internee.pk learning catalog (29 courses)
+- Course cards open an embedded view of the official learning site
+- Independent practice quizzes organized by subject category, with scores synced to Firestore
+- Saved courses as personal bookmarks
+- Email/password sign up, sign in, password reset, and sign out
+- Responsive mobile interface
+
+## Tech Stack
+
+- Flutter and Dart (Material)
+- Firebase Authentication — email/password accounts
+- Cloud Firestore — saved courses and quiz scores
+- webview_flutter — embedded LMS view
+- url_launcher — external links
+
 ## Setup
 
 1. Install Flutter stable and Android Studio or Xcode. From this directory run `flutter create --platforms=android,ios .` to generate standard native runner files (this delivery is a lean source project). Then `flutter pub get`.
